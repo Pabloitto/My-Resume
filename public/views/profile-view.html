@@ -9,13 +9,31 @@
             <ul class="list-unstyled contact-list">
                 <li data-ng-repeat="item in model.contactList track by item.name" data-ng-class="item.className">
                     <i class="fa {{item.icon}}"></i>
-                    <a href="{{item.url}}">{{item.contact}}</a></li>
+                    <a href="{{item.url}}" target="_blank">{{item.contact}}</a></li>
             </ul>
         </div>
 
         <div class="education-container container-block">
             <h2 class="container-block-title">Education</h2>
             <div class="item" data-ng-repeat="item in model.education track by item.title">
+                <h4 class="degree">{{item.title}}</h4>
+                <h5 class="meta">{{item.place}}</h5>
+                <div class="time">{{item.period}}</div>
+            </div>
+        </div>
+
+        <div class="education-container container-block">
+            <h2 class="container-block-title">Certifications</h2>
+            <div class="item" data-ng-repeat="item in model.certifications track by item.title">
+                <h4 class="degree">{{item.title}}</h4>
+                <h5 class="meta">{{item.place}}</h5>
+                <div class="time">{{item.period}}</div>
+            </div>
+        </div>
+
+        <div class="education-container container-block">
+            <h2 class="container-block-title">Courses</h2>
+            <div class="item" data-ng-repeat="item in model.courses track by item.title">
                 <h4 class="degree">{{item.title}}</h4>
                 <h5 class="meta">{{item.place}}</h5>
                 <div class="time">{{item.period}}</div>

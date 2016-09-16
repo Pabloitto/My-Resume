@@ -15,10 +15,18 @@ module.exports = function() {
             title : "Software Engineer",
             summary : "I'm software developer with experience in designing and developing innovative solutions using Java and .NET. I'm enthusiastic of technology and I'm always trying do the best. I believe in the power of the software as a way to improve the lifes of the people. I really love program especially using Javascript and c#, I love to feel the freedom and creativity sense when I'm developing. I really love program especially using Javascript and c#, I love to feel the freedom and creativity sense when I'm developing. I like create video games just because is fun. I automate the repetitive tasks in my current day trying to save all the possible time, because is boring spend time doing trivial things than can be automated easily.",
             education : [
-                {title : "Computational Systems Enineer", place : "ITESCA", period : "2007-2011"},
-                {title : "Oracle Certified Professional, Java SE 6 Programmer", place : "Oracle", period : "2013"},
-                {title : "Build Web Apps with React JS and Flux", place : "Udemy", period : "2014"},
-                {title : "Node JS career path", place : "Pluralsight", period : "2016"}
+                {title : "Computational Systems Enineer", place : "ITESCA", period : "2007-2011"}
+            ],
+            certifications : [
+                {title : "Oracle Certified Professional, Java SE 6 Programmer", place : "Oracle", period : "2013"}
+            ],
+            courses : [
+                {title : "Introduction to Angular JS", place : "Tiempo Development", period : "2015"},
+                {title : "Build Web Apps with React JS and Flux", place : "Udemy", period : "2016"},
+                {title : "Build Web Video Games with JavaScript and HTML5 (Phaser)", place : "Udemy", period : "2016"},
+                {title : "Node JS (Express 4.0, Client and Server, RESTful Web Services, Testing Strategies, Application Patterns)", place : "Pluralsight", period : "2016"},
+                {title : "Introduction to React JS", place : "Tiempo Development", period : "2016"},
+                {title : "Building Your First Xamarin.Android App from Start to Store", place : "Pluralsight", period : "2016"}
             ],
             languages : [
                 {name : "Spanish" , level : "Native"},
@@ -53,15 +61,15 @@ module.exports = function() {
                 {title : "Surviving The Elements",  technologies : ["Vanilla Javascript"], description : "Game created to participate in the JS13K contest on 2014"}
             ],
             skills : [
-                {name : "C#", level : 90},
-                {name : "MVC", level : 85},
-                {name : "Java", level : 90},
-                {name : "Javascript", level : 90},
-                {name : "Node JS", level : 75},
-                {name : "Angular JS", level : 80},
-                {name : "React", level : 70},
-                {name : "SQL", level : 80},
-                {name : "MySQL", level : 70}
+                {name : "C#(6 years)", level : 90},
+                {name : "MVC(5 years)", level : 85},
+                {name : "Java(6 years)", level : 90},
+                {name : "Javascript(5 years)", level : 90},
+                {name : "Node JS(2 years)", level : 75},
+                {name : "Angular JS(2 years)", level : 80},
+                {name : "React(1 year)", level : 70},
+                {name : "SQL(6 years)", level : 80},
+                {name : "MySQL(1 year)", level : 70}
             ]
         });
     }
