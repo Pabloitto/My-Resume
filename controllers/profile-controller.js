@@ -13,7 +13,7 @@ module.exports = function() {
                 {name : "Github" , url : "https://github.com/Pabloitto", className : "github", contact : "Gihub", icon : "fa-github"},
             ],
             title : "Software Engineer",
-            summary : "I'm software developer with experience in designing and developing innovative solutions using Java and .NET. I'm enthusiastic of technology and I'm always trying do the best. I believe in the power of the software as a way to improve the lifes of the people. I really love program especially using Javascript and c#, I love to feel the freedom and creativity sense when I'm developing. I really love program especially using Javascript and c#, I love to feel the freedom and creativity sense when I'm developing. I like create video games just because is fun. I automate the repetitive tasks in my current day trying to save all the possible time, because is boring spend time doing trivial things than can be automated easily.",
+            summary : "I'm software developer with experience in designing and developing innovative solutions using Java and .NET. I'm enthusiastic of technology and I'm always trying do the best. I believe in the power of the software as a way to improve the lifes of the people. I really love program especially using Javascript and c#, I love to feel the freedom and creativity sense when I'm developing. I like create video games just because is fun. I automate the repetitive tasks in my current day trying to save all the possible time, because is boring spend time doing trivial things than can be automated easily.",
             education : [
                 {title : "Computational Systems Enineer", place : "ITESCA", period : "2007-2011"}
             ],
