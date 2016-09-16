@@ -261,6 +261,7 @@ p {
   .sidebar-wrapper {
     position: static;
     width: inherit;
+    height: auto;
   }
   .main-wrapper {
     padding: 30px;
