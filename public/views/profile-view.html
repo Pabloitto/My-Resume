@@ -1,0 +1,91 @@
+<div data-ng-init="init()">
+    <div class="sidebar-wrapper">
+        <div class="profile-container">
+            <img class="profile" data-ng-src="{{model.profileImage}}" alt="" />
+            <h1 class="name">{{model.name}}</h1>
+            <h3 class="tagline">{{model.title}}</h3>
+        </div>
+        <div class="contact-container container-block">
+            <ul class="list-unstyled contact-list">
+                <li data-ng-repeat="item in model.contactList track by item.name" data-ng-class="item.className">
+                    <i class="fa {{item.icon}}"></i>
+                    <a href="{{item.url}}">{{item.contact}}</a></li>
+            </ul>
+        </div>
+
+        <div class="education-container container-block">
+            <h2 class="container-block-title">Education</h2>
+            <div class="item" data-ng-repeat="item in model.education track by item.title">
+                <h4 class="degree">{{item.title}}</h4>
+                <h5 class="meta">{{item.place}}</h5>
+                <div class="time">{{item.period}}</div>
+            </div>
+        </div>
+
+        <div class="languages-container container-block">
+            <h2 class="container-block-title">Languages</h2>
+            <ul class="list-unstyled interests-list">
+                <li data-ng-repeat="item in model.languages track by item.name">{{item.name}} <span class="lang-desc">{{item.level}}</span></li>
+            </ul>
+        </div>
+
+        <div class="interests-container container-block">
+            <h2 class="container-block-title">Interests</h2>
+            <ul class="list-unstyled interests-list">
+                <li data-ng-repeat="item in model.interest track by $index">{{item}}</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="main-wrapper">
+
+        <section class="section summary-section">
+            <h2 class="section-title"><i class="fa fa-user"></i>Summary</h2>
+            <div class="summary">
+                <p>{{model.summary}}</p>
+            </div>
+        </section>
+
+        <section class="section experiences-section">
+            <h2 class="section-title"><i class="fa fa-briefcase"></i>Experience</h2>
+            <div class="item" data-ng-repeat="item in model.experiencies">
+                <div class="meta">
+                    <div class="upper-row">
+                        <h3 class="job-title">{{item.jobTitle}}</h3>
+                        <div class="time">{{item.period}}</div>
+                    </div>
+                    <div class="company">{{item.company}}</div>
+                </div>
+                <div class="details">
+                    <p>
+                        {{item.description}}
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section projects-section">
+            <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+            <div class="item" data-ng-repeat="item in model.projects">
+                <span class="project-title"><a href="#hook"><b>{{item.title}}</b></a></span> (<span class="technologies">{{item.technologies.join(", ")}}</span>)
+                <br/>
+                <br/>
+                 <span class="project-tagline">{{item.description}}</span>
+            </div>
+        </section>
+
+        <section class="skills-section section">
+            <h2 class="section-title"><i class="fa fa-rocket"></i>Skills</h2>
+            <div class="skillset" data-ng-repeat="item in model.skills track by item.name">
+                <div class="item">
+                    <h3 class="level-title">{{item.name}}</h3>
+                    <div class="level-bar">
+                        <level-bar level="item.level"></level-bar>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
