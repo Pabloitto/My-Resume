@@ -34,7 +34,8 @@ module.exports = function () {
             ],
             interest: ["Video Games", "Programming", "Movies"],
             experiencies: [
-                { jobTitle: "Software Engineer III", company: "Tiempo Development", period: "Sep 2016 - Current Job", description: "I developed applications using .NET Technologies. Design the architecture and structure of the code, organizing the team to use the best practices, create and maintain the unit test suite, always in constant communication with the customer using agile methodologies." },
+                { jobTitle: "Senior Software Developer", company:"Sonata Services", period: "March 2017 - Current Job", description:"I'm doing a migration with a private tool to improve an ETL process for account payment checks."},
+                { jobTitle: "Software Engineer III", company: "Tiempo Development", period: "Sep 2016 - March 2017", description: "I developed applications using .NET Technologies. Design the architecture and structure of the code, organizing the team to use the best practices, create and maintain the unit test suite, always in constant communication with the customer using agile methodologies." },
                 { jobTitle: "Software Engineer II", company: "Tiempo Development", period: "Nov 2013 - Sep 2016", description: "I'm responsible for designing and developing new features and functionality for software applications with the customer specifications using agile methodologies, Identifying, troubleshooting and debugging defects in designated application code." },
                 { jobTitle: "Analyst", company: "ITSON", period: "May 2013 - Nov 2013", description: "Support and maintenance for ITSON software applications additionally I'm developer for new web  and Desktop applications in .NET Technologies." },
                 { jobTitle: "QA Engineer", company: "Geniutec", period: "March 2013 - April 2013", description: "Developing automation suites for the SDC product line" },
