@@ -34,7 +34,8 @@ module.exports = function () {
             ],
             interest: ["Video Games", "Programming", "Movies"],
             experiencies: [
-                { jobTitle: "Senior Software Developer", company:"Sonata Services", period: "March 2017 - Current Job", description:"I'm doing a migration with a private tool to improve an ETL process for account payment checks."},
+                { jobTitle: "Full Stack Javascript Developer", company:"UnoSquare", period: "May 2017 - Current Job", description:"Developing different mobile application on React native and Support and maintenance for node rest APIs and background services for Foundation Medicine"},
+                { jobTitle: "Senior Software Developer", company:"Sonata Services", period: "March 2017 - May - 2017", description:"I'm doing a migration with a private tool to improve an ETL process for account payment checks."},
                 { jobTitle: "Software Engineer III", company: "Tiempo Development", period: "Sep 2016 - March 2017", description: "I developed applications using .NET Technologies. Design the architecture and structure of the code, organizing the team to use the best practices, create and maintain the unit test suite, always in constant communication with the customer using agile methodologies." },
                 { jobTitle: "Software Engineer II", company: "Tiempo Development", period: "Nov 2013 - Sep 2016", description: "I'm responsible for designing and developing new features and functionality for software applications with the customer specifications using agile methodologies, Identifying, troubleshooting and debugging defects in designated application code." },
                 { jobTitle: "Analyst", company: "ITSON", period: "May 2013 - Nov 2013", description: "Support and maintenance for ITSON software applications additionally I'm developer for new web  and Desktop applications in .NET Technologies." },
@@ -65,12 +66,12 @@ module.exports = function () {
                 { name: "C#(6 years)", level: 90 },
                 { name: "MVC(5 years)", level: 85 },
                 { name: "Java(6 years)", level: 90 },
-                { name: "Javascript(5 years)", level: 90 },
-                { name: "Node JS(2 years)", level: 75 },
-                { name: "Angular JS(2 years)", level: 80 },
-                { name: "React(1 year)", level: 70 },
+                { name: "Javascript(6 years)", level: 90 },
+                { name: "Node JS(3 years)", level: 75 },
+                { name: "Angular JS(3 years)", level: 80 },
+                { name: "React(2 year)", level: 80 },
                 { name: "SQL(6 years)", level: 80 },
-                { name: "MySQL(1 year)", level: 70 }
+                { name: "MySQL(2 year)", level: 70 }
             ]
         });
     }
