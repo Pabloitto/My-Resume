@@ -65,6 +65,13 @@
             </div>
         </section>
 
+        <section class="section talks-section">
+            <h2 class="section-title"><i class="fa fa-comments"></i>Talks</h2>
+            <div class="talk" data-ng-repeat="item in model.talks">
+                <a href="{{item.url}}" target="_blank">{{item.title}}</a>
+            </div>
+        </section>
+
         <section class="section experiences-section">
             <h2 class="section-title"><i class="fa fa-briefcase"></i>Experience</h2>
             <div class="item" data-ng-repeat="item in model.experiencies">

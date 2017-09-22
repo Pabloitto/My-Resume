@@ -14,6 +14,10 @@ module.exports = function () {
             ],
             title: "Software Engineer",
             summary: "I'm fullstack developer with experience in designing and developing innovative solutions using .NET, Java and Javascript . I'm enthusiastic of technology and I'm always trying do the best. I believe in the power of the software as a way to improve the lifes of the people. I really love program especially using Javascript and C#, I love to feel the freedom and creativity sense when I'm programing. I like create video games just because is fun. I automate the repetitive tasks in my current day trying to save all the possible time, because is boring spend time doing trivial things than can be automated easily.",
+            talks: [
+                { title: "Javascript as C# developer", url: "", year: 2016, url: "https://www.facebook.com/LifeatTiempo/videos/1299043733522234/"},
+                { title: "Videogames Development with HTML 5 and Javascript", url: "https://www.facebook.com/LifeatTiempo/videos/1065194936907116/", year: 2017 }
+            ],
             education: [
                 { title: "Computational Systems Enineer", place: "ITESCA", period: "2007-2011" }
             ],
