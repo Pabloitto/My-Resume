@@ -43,6 +43,9 @@ module.exports = function () {
                 { jobTitle: "Software Engineer", company: "Novutek", period: "Sep 2011 - March 2013", description: "Analyzes, designs and software applications using the Java EE platform and .NET`." }
             ],
             projects: [
+                { title: "Pressision Enrollment Engine", technologies: ["Node JS", "Express", "Jade", "JQuery", "React", "Jasmine", "Mongo"], description: "Engine responsible to schedule emails to send information about the test patients to the admins and doctors." },
+                { title: "Mobile order tracking", technologies: ["Node JS", "React Native", "React", "Jest", "Enzime"], description: "Creation of mobile app to manage the test orders for the doctors." },
+                { title: "Email Service", technologies: ["Node JS", "Hapi JS", "mocha", "Handlebars" ,"Mailtrap", "Mongo", "ActiveMQ", "Redis", "Mandrill"], description: "Responsible to migrate legacy code to mircoservice to handle emails" },
                 { title: "Middleware Migration", technologies: ["C#", "Azure Storage", "WebJobs", "Worker Roles", "SQL Server 2014", "EntityFramework"], description: "Responsible to migrate legacy code to cloud services on azure" },
                 { title: "Datawarehousing Support", technologies: ["C#", "Java", "Postgress", "SQL Server 2012"], description: "Responsible to create scripts for ETL process" },
                 { title: "Reports Engine", technologies: ["C#", "Java", "EvoPDF", "Web API 2", "Angular JS", "Javascript", "EntityFramework"], description: "Responsible to create a new engine to automate the generation of reports for the customers." },
@@ -67,11 +70,11 @@ module.exports = function () {
                 { name: "MVC(5 years)", level: 85 },
                 { name: "Java(6 years)", level: 90 },
                 { name: "Javascript(6 years)", level: 90 },
-                { name: "Node JS(3 years)", level: 75 },
+                { name: "Node JS(3 years)", level: 80 },
                 { name: "Angular JS(3 years)", level: 80 },
                 { name: "React(2 year)", level: 80 },
                 { name: "SQL(6 years)", level: 80 },
-                { name: "MySQL(2 year)", level: 70 }
+                { name: "Mongo(1 year)", level: 60 }
             ]
         });
     }
