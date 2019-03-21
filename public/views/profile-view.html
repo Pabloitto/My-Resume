@@ -41,6 +41,8 @@
         </div>
 
         <div class="languages-container container-block">
+            <br />
+            <br />
             <h2 class="container-block-title">Languages</h2>
             <ul class="list-unstyled interests-list">
                 <li data-ng-repeat="item in model.languages track by item.name">{{item.name}} <span class="lang-desc">{{item.level}}</span></li>
@@ -92,12 +94,27 @@
         </section>
 
         <section class="section projects-section">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
             <div class="item" data-ng-repeat="item in model.projects">
                 <span class="project-title"><a href="javascript:void(0);"><b>{{item.title}}</b></a></span> (<span class="technologies">{{item.technologies.join(", ")}}</span>)
                 <br/>
                 <br/>
-                 <span class="project-tagline">{{item.description}}</span>
+                 <span class="project-tagline">
+                     {{item.description}}
+                     <a target="_blank"
+                        data-ng-if='item.link'
+                        href='{{item.link}}'>{{item.link}}</a>
+                </span>
             </div>
         </section>
 
