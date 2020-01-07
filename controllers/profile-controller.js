@@ -1,10 +1,12 @@
 module.exports = function () {
 
+    const yearOfBirth = 1989;
+
     function fetchProfile(req, res) {
         res.send({
             name: "Juan Pablo Itto",
-            profileImage: "https://media.licdn.com/dms/image/C5603AQG3vrucnKQEiA/profile-displayphoto-shrink_200_200/0?e=1545264000&v=beta&t=Tw3yqklyHtF5wHvdD_p8BVtiBZqt2k3DoLOXyRbcvNI",
-            age: 29,
+            profileImage: "https://media.licdn.com/dms/image/C5603AQG3vrucnKQEiA/profile-displayphoto-shrink_200_200/0?e=1583971200&v=beta&t=NyfTseJbpBYCuLsr279KGQQp5QgYONsswKShrmXU1Pg",
+            age: new Date().getFullYear() - yearOfBirth,
             contactList: [
                 { name: "Email", url: "mailto:pabloitto@gmail.com", className: "email", contact: "pabloitto@gmail.com", icon: "fa-envelope" },
                 { name: "Skype", url: "javascript:void(0)", className: "email", contact: "pablo_itto", icon: "fa-skype" },
@@ -20,10 +22,11 @@ module.exports = function () {
                 { title: "Videogames Development with HTML 5 and Javascript", url: "https://www.facebook.com/LifeatTiempo/videos/1065194936907116/", year: 2016 }
             ],
             education: [
-                { title: "Computational Systems Enineer", place: "ITESCA", period: "2007-2011" }
+                { title: "Computational Systems Engineer", place: "ITESCA", period: "2007-2011" }
             ],
             certifications: [
-                { title: "Oracle Certified Professional, Java SE 6 Programmer", place: "Oracle", period: "2013" }
+                { title: "Oracle Certified Professional, Java SE 6 Programmer", place: "Oracle", period: "2013" },
+                { title: "Exam 483: Programming in C#", place: "Microsoft", period: "2019" }
             ],
             courses: [
                 { title: "Introduction to Angular JS", place: "Tiempo Development", period: "2015" },
@@ -38,8 +41,9 @@ module.exports = function () {
                 { name: "English", level: "Conversational" }
             ],
             interest: ["Video Games", "Programming", "Movies"],
-            experiencies: [
-                { jobTitle: "Team Lead & Sr. Software Engineer", company:"UnoSquare", period: "May 2017 - Current Job", description:"Developing different mobile application on React native and Support and maintenance for node rest APIs and background services for Foundation Medicine"},
+            experiences: [
+                { jobTitle: "Software engineer lead", company:"Tiempo Development", period: "October 2019 - Current Job", description:"Developing financial tools for an insurance company, mentoring junior developers"},
+                { jobTitle: "Team Lead & Sr. Software Engineer", company:"UnoSquare", period: "May 2017 - October 2019", description:"Developing different mobile application on React native and Support and maintenance for node rest APIs and background services for Foundation Medicine"},
                 { jobTitle: "Senior Software Developer", company:"Sonata Services", period: "March 2017 - May - 2017", description:"I'm doing a migration with a private tool to improve an ETL process for account payment checks."},
                 { jobTitle: "Software Engineer III", company: "Tiempo Development", period: "Sep 2016 - March 2017", description: "I developed applications using .NET Technologies. Design the architecture and structure of the code, organizing the team to use the best practices, create and maintain the unit test suite, always in constant communication with the customer using agile methodologies." },
                 { jobTitle: "Software Engineer II", company: "Tiempo Development", period: "Nov 2013 - Sep 2016", description: "I'm responsible for designing and developing new features and functionality for software applications with the customer specifications using agile methodologies, Identifying, troubleshooting and debugging defects in designated application code." },
@@ -65,24 +69,24 @@ module.exports = function () {
                 { title: "ITSON Block System", technologies: ["C#", "WPF"], description: "Desktop application to manage the control of the computers in the lab" },
                 { title: "Payment System CONAGUA", technologies: ["C#", "MVC3", "SQL Server 2008", "NHibernate", "JQuery", "Javascript"], description: "Portal to allow to the customers for water use statements" },
                 { title: "Daycare System ISSSTE", technologies: ["Java", "Java Server Faces", "Spring/Spring Security", "Hibernate", "Informix", "Javascript", "JQuery"], description: "Portal to take assistance for the childrens." },
-                { title: "Crazy Reports", technologies: ["Node JS", "Angular JS", "Ace.js", "Express", "Gulp", "Javascript"], description: "Personal proyect for create dynamic reports based on html and json datasources", link: 'https://github.com/Pabloitto/CrazyReports' },
+                { title: "Crazy Reports", technologies: ["Node JS", "Angular JS", "Ace.js", "Express", "Gulp", "Javascript"], description: "Personal project for create dynamic reports based on html and json data sources", link: 'https://github.com/Pabloitto/CrazyReports' },
                 { title: "Ultimate Scrum Poker", technologies: ["Node JS", "Angular JS", "Express", "Gulp", "Socket.IO", "Javascript"], description: "Scrum poker game to work with remote teams", link: 'https://github.com/Pabloitto/ultimatescrumpoker' },
                 { title: "Angular Tools boilerplate", technologies: ["Node JS", "Angular JS", "Express", "Gulp", "Javascript", "Browser sync"], description: "Boilerplate for angular projects based on gulp tasks and Browser sync", link: 'https://github.com/Pabloitto/angular-tools' },
                 { title: "Maze Engine", technologies: ["Node JS", "Vanilla Javascript", "Express", "Gulp"], description: "Puzzle game to help the people learn javascript", link: 'https://github.com/Pabloitto/Maze-Engine'},
                 { title: "Surviving The Elements", technologies: ["Vanilla Javascript"], description: "Game created to participate in the JS13K contest on 2014", link: 'https://github.com/Pabloitto/Surviving-elements' }
             ],
             skills: [
-                { name: "C#(7 years)", level: 90 },
-                { name: "Java(7 years)", level: 90 },
-                { name: "Javascript(7 years)", level: 90 },
+                { name: "C#(9 years)", level: 90 },
+                { name: "Java(9 years)", level: 90 },
+                { name: "Javascript(9 years)", level: 90 },
                 { name: "React(4 year)", level: 90 },
-                { name: "Node JS(4 years)", level: 90 },
-                { name: "Git(4 years)", level: 80 },
-                { name: "Angular JS(3 years)", level: 80 },
-                { name: "SQL(7 years)", level: 80 },
-                { name: "Mongo(2 year)", level: 80 },
-                { name: "Oracle(2 year)", level: 80 },
-                { name: "Docker(2 year)", level: 70 }
+                { name: "Node JS(5 years)", level: 90 },
+                { name: "Git(5 years)", level: 80 },
+                { name: "Angular JS(4 years)", level: 80 },
+                { name: "SQL(9 years)", level: 80 },
+                { name: "Mongo(3 year)", level: 80 },
+                { name: "Oracle(3 year)", level: 80 },
+                { name: "Docker(3 year)", level: 70 }
             ]
         });
     }
