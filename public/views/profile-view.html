@@ -1,5 +1,6 @@
 <div data-ng-init="init()">
     <div class="sidebar-wrapper">
+      <div class="page-container">
         <div class="profile-container">
             <img class="profile" data-ng-src="{{model.profileImage}}" alt="" />
             <h1 class="name">{{model.name}}</h1>
@@ -39,10 +40,9 @@
                 <div class="time">{{item.period}}</div>
             </div>
         </div>
-
+      </div>
+      <div class="page-container">
         <div class="languages-container container-block">
-            <br />
-            <br />
             <h2 class="container-block-title">Languages</h2>
             <ul class="list-unstyled interests-list">
                 <li data-ng-repeat="item in model.languages track by item.name">{{item.name}} <span class="lang-desc">{{item.level}}</span></li>
@@ -55,11 +55,11 @@
                 <li data-ng-repeat="item in model.interest track by $index">{{item}}</li>
             </ul>
         </div>
-
+      </div>
     </div>
 
     <div class="main-wrapper">
-
+       <div class="page-container">
         <section class="section summary-section">
             <h2 class="section-title"><i class="fa fa-user"></i>Summary</h2>
             <div class="summary">
@@ -90,25 +90,13 @@
                     </p>
                 </div>
             </div>
-
         </section>
-
+      </div>
+      <div class="page-container" style="margin-top: 15px;">
         <section class="section projects-section">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
             <div class="item" data-ng-repeat="item in model.projects">
                 <span class="project-title"><a href="javascript:void(0);"><b>{{item.title}}</b></a></span> (<span class="technologies">{{item.technologies.join(", ")}}</span>)
-                <br/>
-                <br/>
                  <span class="project-tagline">
                      {{item.description}}
                      <a target="_blank"
@@ -129,5 +117,6 @@
                 </div>
             </div>
         </section>
+      </div>
     </div>
 </div>
