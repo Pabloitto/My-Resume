@@ -187,10 +187,10 @@ p {
   position: relative;
 }
 .main-wrapper .section {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .main-wrapper .experiences-section .item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .main-wrapper .upper-row {
   position: relative;
@@ -299,9 +299,10 @@ span.technologies{
 }
 
 .page-container {
-  min-height: 92vh;
+  min-height: 70vh;
   padding-bottom: 15px;
-  position: relative;
-  page-break-after: always;
-  page-break-inside: avoid;
+}
+
+.link-url {
+  color: #337ab7 !important;
 }

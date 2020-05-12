@@ -67,11 +67,16 @@
             </div>
         </section>
 
-        <section class="section talks-section">
-            <h2 class="section-title"><i class="fa fa-comments"></i>Talks</h2>
-            <div class="talk" data-ng-repeat="item in model.talks">
-                <a href="{{item.url}}" target="_blank">{{item.title}}</a>
-            </div>
+        <section class="skills-section section">
+          <h2 class="section-title"><i class="fa fa-rocket"></i>Skills</h2>
+          <div class="skillset" data-ng-repeat="item in model.skills track by item.name">
+              <div class="item">
+                  <h3 class="level-title">{{item.name}}</h3>
+                  <div class="level-bar">
+                      <level-bar level="item.level"></level-bar>
+                  </div>
+              </div>
+          </div>
         </section>
 
         <section class="section experiences-section">
@@ -92,31 +97,28 @@
             </div>
         </section>
       </div>
-      <div class="page-container" style="margin-top: 15px;">
+      <div class="page-container">
         <section class="section projects-section">
             <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
             <div class="item" data-ng-repeat="item in model.projects">
                 <span class="project-title"><a href="javascript:void(0);"><b>{{item.title}}</b></a></span> (<span class="technologies">{{item.technologies.join(", ")}}</span>)
-                 <span class="project-tagline">
+                <br />
+                <span class="project-tagline">
                      {{item.description}}
-                     <a target="_blank"
+                     <a target="_blank" class="link-url"
                         data-ng-if='item.link'
                         href='{{item.link}}'>{{item.link}}</a>
                 </span>
             </div>
         </section>
 
-        <section class="skills-section section">
-            <h2 class="section-title"><i class="fa fa-rocket"></i>Skills</h2>
-            <div class="skillset" data-ng-repeat="item in model.skills track by item.name">
-                <div class="item">
-                    <h3 class="level-title">{{item.name}}</h3>
-                    <div class="level-bar">
-                        <level-bar level="item.level"></level-bar>
-                    </div>
-                </div>
+        <section class="section talks-section">
+            <h2 class="section-title"><i class="fa fa-comments"></i>Talks</h2>
+            <div class="talk" data-ng-repeat="item in model.talks">
+                <a href="{{item.url}}" target="_blank">{{item.title}}</a>
             </div>
         </section>
+
       </div>
     </div>
 </div>
