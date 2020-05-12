@@ -314,6 +314,18 @@ module.exports = function () {
           description:
             "Portal to store the information about the procedures for the Notaria in order to have more control and statistics about the clients.",
         },
+        {
+          title: 'My Resume',
+          technologies: [
+            "Node JS",
+            "Angular JS",
+            "Puppeteer",
+            "Javascript",
+          ],
+          description:
+            "Website hosted on heroku to show my resume using node js and web technologies.",
+          link: 'https://github.com/Pabloitto/My-Resume'
+        },
       ],
       skills: [
         { name: "C#(9 years)", level: 90 },
