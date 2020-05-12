@@ -6,9 +6,9 @@ angular.module('resumeApp').factory("ProfileService", function ($http, $window) 
         });
     }
 
-    function downloadResume() {
+    function downloadResume(fileName) {
       return $http.post("/api/pdf/download", {
-        fileName: 'RESUME_JP_20200511',
+        fileName,
         url: $window.location.href
       }, { responseType: 'arraybuffer' }).then(function(response){
           return response;

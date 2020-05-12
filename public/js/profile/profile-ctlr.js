@@ -12,12 +12,12 @@
       };
 
       $scope.download = function () {
-        var fileName = "file_name.pdf";
-        var a = document.createElement("a");
+        const fileName = `RESUME_JP_${new Date().getTime()}`;
+        const a = document.createElement("a");
         document.body.appendChild(a);
-        profileService.downloadResume().then((result) => {
-          var file = new Blob([result.data], { type: "application/pdf" });
-          var fileURL = window.URL.createObjectURL(file);
+        profileService.downloadResume(fileName).then((result) => {
+          const file = new Blob([result.data], { type: "application/pdf" });
+          const fileURL = window.URL.createObjectURL(file);
           a.href = fileURL;
           a.download = fileName;
           a.click();

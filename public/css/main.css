@@ -306,3 +306,10 @@ span.technologies{
 .link-url {
   color: #337ab7 !important;
 }
+
+.btn-download {
+  background-color: #6c92a3;
+}
+.btn-download:hover{
+  color: #fff
+}
