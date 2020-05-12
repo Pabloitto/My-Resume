@@ -13,7 +13,6 @@ body {
   color: #545E6C;
   background: #f5f5f5;
   font-size: 14px;
-  padding-top: 30px;
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -301,7 +300,7 @@ span.technologies{
 
 .page-container {
   min-height: 95vh;
-  padding-bottom: 15px;
+  padding-bottom: 45px;
 }
 
 .link-url {
