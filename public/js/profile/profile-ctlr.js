@@ -1,20 +1,32 @@
 (function () {
+  var app = angular.module("resumeApp");
 
-    var app = angular.module('resumeApp');
+  app.controller("ProfileController", [
+    "$scope",
+    "ProfileService",
+    function ($scope, profileService) {
+      $scope.model = {};
 
-    app.controller("ProfileController", ["$scope", "ProfileService", function ($scope, profileService) {
+      $scope.init = function () {
+        profileService.fetchProfile().then(onProfileLoad);
+      };
 
-        $scope.model = {};
+      $scope.download = function () {
+        var fileName = "file_name.pdf";
+        var a = document.createElement("a");
+        document.body.appendChild(a);
+        profileService.downloadResume().then((result) => {
+          var file = new Blob([result.data], { type: "application/pdf" });
+          var fileURL = window.URL.createObjectURL(file);
+          a.href = fileURL;
+          a.download = fileName;
+          a.click();
+        });
+      };
 
-
-        $scope.init = function () {
-            profileService.fetchProfile().then(onProfileLoad);
-        }
-        
-        function onProfileLoad(response) {
-            $scope.model = response;
-        }
-
-    }]);
-
-} ());
+      function onProfileLoad(response) {
+        $scope.model = response;
+      }
+    },
+  ]);
+})();
