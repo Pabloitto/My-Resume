@@ -3,8 +3,9 @@
 
   app.controller("ProfileController", [
     "$scope",
+    "$window",
     "ProfileService",
-    function ($scope, profileService) {
+    function ($scope, $window, profileService) {
       $scope.model = {};
 
       $scope.init = function () {
@@ -13,14 +14,10 @@
 
       $scope.download = function () {
         const fileName = `RESUME_JP_${new Date().getTime()}`;
-        const a = document.createElement("a");
-        document.body.appendChild(a);
+        const windowRef = $window.open('', 'blank');
         profileService.downloadResume(fileName).then((result) => {
           const file = new Blob([result.data], { type: "application/pdf" });
-          const fileURL = window.URL.createObjectURL(file);
-          a.href = fileURL;
-          a.download = fileName;
-          a.click();
+          windowRef.location.href = $window.URL.createObjectURL(file);
         });
       };
 

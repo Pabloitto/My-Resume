@@ -310,6 +310,8 @@ span.technologies{
 .btn-download {
   background-color: #6c92a3;
 }
-.btn-download:hover{
-  color: #fff
+.btn-download:hover, .btn-download:focus, .btn-download:active{
+  color: #fff;
+  border-color: #6c92a3;
+  outline: none;
 }
