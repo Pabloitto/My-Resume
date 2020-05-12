@@ -100,7 +100,7 @@ p {
   font-size: 14px;
 }
 .sidebar-wrapper .container-block {
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
 }
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
