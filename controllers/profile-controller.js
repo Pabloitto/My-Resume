@@ -49,7 +49,7 @@ module.exports = function () {
       title: "Sr. Software Engineer",
       summary: `I'm fullstack developer enthusiastic of technology with almost ${
         currentYear - carrierStartYear + 1
-      } years of experience designing and developing innovative solutions using Web Technologies such .NET, Node JS and Javascript and React JS.`,
+      } years of experience designing and developing innovative solutions using Web Technologies such .NET, Node JS, Javascript and React JS.`,
       talks: [
         {
           title: "Backend As C# developer using Nest JS",

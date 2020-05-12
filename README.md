@@ -13,6 +13,16 @@ git clone https://github.com/Pabloitto/My-Resume.git
 npm install
 ```
 
+**Run Dev Mode**
+```javascript
+npm run dev
+```
+
+**Run Prod Mode**
+```javascript
+npm start
+```
+
 **Technologies**
 
 * **Node JS**
