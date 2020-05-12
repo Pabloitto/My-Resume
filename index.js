@@ -1,27 +1,35 @@
-var http = require('http'),
-     path = require('path'),
-     express = require('express'),
-     app = express(),
-     bodyParser = require('body-parser');
+const path = require("path");
+const express = require("express");
+const bodyParser = require("body-parser");
+const {PdfEngine} = require("./pdf.engine");
+const app = express();
 
- function init() {
-     app.use(bodyParser.json());
-     app.use(bodyParser.urlencoded({ extended: true }));
-     app.use(express.static(path.resolve(__dirname, 'public')));
-     initRoutes();
-     startServer();
- }
+const pdfEngine = PdfEngine();
 
- function initRoutes() {
-       var profileRoutes = require("./routes/profile-routes")();
-       app.use('/', profileRoutes);
- }
+function init() {
+  app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded({ extended: true }));
+  app.use(express.static(path.resolve(__dirname, "public")));
+  initRoutes();
+  startServer();
+}
 
- function startServer() {
-     app.set('port', (process.env.PORT || 8085));
-     app.listen(app.get('port'), function() {
-         console.log('Node app is running on port', app.get('port'));
-     });
- }
+function initRoutes() {
+  var profileRoutes = require("./routes/profile-routes")();
+  app.use("/api/profile", profileRoutes);
+  const pdfRoutes = require("./routes/pdf.router")({
+    pdfEngine,
+    logger: console,
+  });
+  app.use("/api/pdf", pdfRoutes);
+}
 
- init();
+function startServer() {
+  app.set("port", process.env.PORT || 8085);
+  app.listen(app.get("port"), async function () {
+    await pdfEngine.init({ logger: console });
+    console.log("Node app is running on port", app.get("port"));
+  });
+}
+
+init();
