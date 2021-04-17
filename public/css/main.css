@@ -226,9 +226,8 @@ p {
 .main-wrapper .projects-section .item {
   margin-bottom: 15px;
 }
-.skillset .item {
-  margin-bottom: 15px;
-  overflow: hidden;
+.skillset {
+  display: inline-block;
 }
 .skillset .level-title {
   font-size: 14px;
@@ -314,4 +313,16 @@ span.technologies{
   color: #fff;
   border-color: #6c92a3;
   outline: none;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 25px;
+  background-color: #4B6A78;
+  color: #fff;
+  margin: 3px;
 }

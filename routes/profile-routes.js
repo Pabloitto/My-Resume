@@ -1,11 +1,11 @@
-var express = require('express');
-var profileRouter = express.Router();
-var profileController = require('../controllers/profile-controller')();
+const express = require('express')
+const profileRouter = express.Router()
+const profileController = require('../controllers/profile-controller')()
 
-module.exports = function() {
-    var route = profileRouter.route('/');
+module.exports = function () {
+  const route = profileRouter.route('/')
 
-    route.get(profileController.fetchProfile);
+  route.get(profileController.fetchProfile)
 
-    return profileRouter;
+  return profileRouter
 }
