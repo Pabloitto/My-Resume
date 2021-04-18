@@ -1,11 +1,13 @@
 const path = require('path')
 const express = require('express')
+const bodyParser = require('body-parser')
 const { PdfEngine } = require('./pdf.engine')
 const app = express()
 
 const pdfEngine = PdfEngine()
 
 function init () {
+  app.use(bodyParser.json());
   app.use(express.static(path.resolve(__dirname, 'public')))
   initRoutes()
   startServer()
